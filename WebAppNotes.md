@@ -18,5 +18,8 @@ one master database and multiple slave databases. Master typically supports only
 operations. The data from the master is replicated to the slaves. In case you lose data from one database, it is still preserved in the others.
 Data that is frequently requestd and not modified is stored in a cache on first retreival. CDNs are used for retreving static content (eg. images/logos that don't change).
 
-Scaling web tier horizontally: A stateful architecture remembers the client requests from one call to the next. A stateless archiecture is one where the webservers
-don't remember client states. 
+Scaling web tier horizontally: You add more servers and you achieve horizontal scaling on the web tier. It can be done with either a stateful or a
+stateless architecture. A stateful architecture remembers the client requests from one call to the next. A stateless archiecture is one where the webservers
+don't remember client states.
+
+
