@@ -1,7 +1,8 @@
 # Basic working of a web app
 Users use a mobile app or a website to access their services. The
-browser/app obtains the IP address from the DNS (Domain Name Severs). Then a 
-HTTP response are sent to the web srever. The webserver responds with a HTML page
+browser/app obtains the IP address from the DNS (Domain Name Severs). GeoDNS
+is used to route the data to the geographically nearest server. Then a 
+HTTP response are sent to the web server. The webserver responds with a HTML page
 or a with a JSON file. JSON is commonly used for the sake of a simple interface. 
 A database is added as the webapp scales. The data bases can be relational or 
 non-relational. Non relational databases are used in a wide variety of applications (like low latency).
@@ -22,4 +23,8 @@ Scaling web tier horizontally: You add more servers and you achieve horizontal s
 stateless architecture. A stateful architecture remembers the client requests from one call to the next. A stateless archiecture is one where the webservers
 don't remember client states.
 
+Message queues support asynchronous communication, where a producer publishes messages to a message queue. The consumer service picks up the data from
+the message queues when it is available. 
 
+Database scaling: You could increase the memory of the database but also scale it horizontally by using database sharding (i.e. splitting the data into multiple DBs).
+The data must be distributed evenly into all databases and the hash must be chosen as such. 
