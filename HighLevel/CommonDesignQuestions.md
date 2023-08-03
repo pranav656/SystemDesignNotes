@@ -31,3 +31,4 @@ can be done: data compression and storing only frequently used keys in memory an
 A distributed key-store is also possible but you need to keep in mind the CAP theorem when designing one.
 C : Consistency A : Availability P : Partition Tolerance
 It is impossible for any distributed system to provide all three. One of it has to be sacrified according to the CAP theorem. 
+TODO: Study in detail.
