@@ -13,3 +13,13 @@ There are other algorithms but on a high level you need to keep count
 of the number of requests based on the user id, IP or other parameters. We need memory to keep
 track of the count. Using data bases are slow due to the disk read speed, so you need somthing
 like a in-memory cache (Redis for example).
+
+# Notes on Consistent Hashing
+Consistent hashing is used to distribute data/requests evenly among databases/servers. Hashes are defined with a number of servers in mind
+and when one of them fail or are removed, the hash may not produce consistent results.
+
+Consistent hashing is a special kind of hashing such that when a
+hash table is re-sized and consistent hashing is used, only k/n keys need to be remapped on
+average, where k is the number of keys, and n is the number of slots. In contrast, in most
+traditional hash tables, a change in the number of array slots causes nearly all keys to be
+remapped.
