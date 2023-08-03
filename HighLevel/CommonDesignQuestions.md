@@ -23,3 +23,11 @@ hash table is re-sized and consistent hashing is used, only k/n keys need to be 
 average, where k is the number of keys, and n is the number of slots. In contrast, in most
 traditional hash tables, a change in the number of array slots causes nearly all keys to be
 remapped.
+
+# Design a key-value store
+Key-value stores are non relational databases where the key is unique and the values associated with the key is
+accessed through the key. A single server key-value store is easy to design, we could put them in a hash table. Two optimizations
+can be done: data compression and storing only frequently used keys in memory and rest on disk.
+A distributed key-store is also possible but you need to keep in mind the CAP theorem when designing one.
+C : Consistency A : Availability P : Partition Tolerance
+It is impossible for any distributed system to provide all three. One of it has to be sacrified according to the CAP theorem. 
