@@ -32,3 +32,11 @@ A distributed key-store is also possible but you need to keep in mind the CAP th
 C : Consistency A : Availability P : Partition Tolerance
 It is impossible for any distributed system to provide all three. One of it has to be sacrified according to the CAP theorem. 
 TODO: Study in detail.
+
+# URL Shortening Service
+A URL shortening service takes in a long URL and provides a shortened URL which when visited is redirected
+to a the longer URL. A simple way to implement a URL shortener is using hashmaps. The key to the hashmap will
+be the shortened URL and the value would be the longer. A hash function would also need to be implemented 
+to convert the long URL into a shorter one. In real world systems the mapping from short URLs to longer URLs 
+is done in a relational database. Base conversions are used to convert the long URL into a shorter one (keep in mind
+that these conversions can also pose a security risk). 
