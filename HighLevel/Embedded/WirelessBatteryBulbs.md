@@ -17,7 +17,7 @@
 6. interfaces to communicate with a group of bulbs.
 
 7. Challenges:
-   1. Power efficienc: Balancing brightness levels and battery levels
+   1. Power efficiency: Balancing brightness levels and battery levels
    2. Interference: Ensure reliable communication in environments with interference
    3. Security: Implementing robust security measures to prevent unauthorized access
    4. Scalability: Designing a system that can support a large number of bulbs without performance degradation.
@@ -26,3 +26,8 @@
   
 Energy efficiency from low to high: Bluetooth Low Energy, Zigbee, Wi-Fi.
    
+## BLE
+* Simpler radio: BLE uses a less complex modulation scheme compared to classic Bluetooth
+* Shorter transmissions: Data is sent in smaller packers, reducing overall transmission itme
+* Duty Cycling: Devices spend most of their time in sleep mode, only waking up for brief periods to transmit
+or receive data. 
