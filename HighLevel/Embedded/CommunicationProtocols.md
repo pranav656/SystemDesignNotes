@@ -1,7 +1,11 @@
 # SPI
 
 # I2C
-
+I2C stands for Inter-Integrated Circuit. It is a synchronous multi-master, multi-slave packet switched serial communication protocol. It's commonly used for connecting low-speed peripherals to microcontrollers, micropocessors and other integrated circuits.  Brief overview of I2C works:
+1. Master and Slave : In an I2C bus, there can be one or more master devices and one or more slave devices (sensors, EEPROM, LCD displays etc.). The master device initiates and controls the communication on bus. 
+2. Serial communication: Communication in I2C occurs over two wires: Serial Data Line (SDA) and Serial Clock Line (SCL). Both lines are bidirectional allowing data to be transmitted and received.
+3. Addressing: Each slave device on the bus has a unique address, allowing the master to select which device it wants to communicates with.
+4. 
 # I3C
 
 # UART
