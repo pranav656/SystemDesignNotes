@@ -18,3 +18,15 @@ There are four aspects:
 
 Business managers tend to think classify tasks in third block as tasks in first block. Architecture is always important.
 Development teams need to guard the architecture. 
+
+# Paradigm Overview
+Three paradigms: structured, object oriented and functional.
+Each paradigms takes power away from the programmers. They influence architecture. 
+
+## Structured programming
+Dijkstra combined control structures with sequential execution. Sequential statements could be proved correct through simple enumeration similar to mathematical proof. Unrestrained use of goto leads to a program that cannot be proved correct. 
+Structured programming allows modules to be recursively decomposed into provable units leading to decomposition of functional blocks. 
+
+Testing shows the presence, not absense of bugs. That being said, you could use tests to prove a (decomposed) program incorrect. Software architecture strives to define modules/components that are easily falsifiable.
+
+## Object Oriented Programming
