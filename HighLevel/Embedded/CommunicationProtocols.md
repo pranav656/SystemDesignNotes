@@ -68,5 +68,18 @@ finally:
 
 ````
 
+## Data formats
+8N1 format (no parity) :
+```
+| Start Bit (0) | Data Bits (11001010) | Stop Bit (1) |
+```
+
+7E1 format (Even parity, 7 data bits) / 7O1 (Odd parity, 7 data bits)
+
+```
+| Start Bit (0) | Data Bits (1010101) | Parity Bit (0) | Stop Bit (1) |
+```
+
+
 # CAN
 
