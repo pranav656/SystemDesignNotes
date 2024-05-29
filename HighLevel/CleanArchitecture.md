@@ -30,3 +30,9 @@ Structured programming allows modules to be recursively decomposed into provable
 Testing shows the presence, not absense of bugs. That being said, you could use tests to prove a (decomposed) program incorrect. Software architecture strives to define modules/components that are easily falsifiable.
 
 ## Object Oriented Programming
+One advantages of OO is encapsulation but encapsulation could be achieved with C already. Inheritance too could be achieved in C with a bit of trickery but multiple inheritance 
+could turn out to be more complex. Polymorphism enables dependency inversion and any source code dependency anywhere in the code base could be inverted. This enables absolute
+control of all source code dependencies int the system. Each component in the system could be deployed independently. This enables plugin architecture decoupling low level modules
+and high level modules. 
+
+## Functional programming
