@@ -36,3 +36,8 @@ control of all source code dependencies int the system. Each component in the sy
 and high level modules. 
 
 ## Functional programming
+In functional programming, variables are immutable. all race conditions, deadlocks and concurrent update
+problems are due to mutable variables. Immutability requires infinite 
+storage and resources. It can be applied practically if certain 
+compromises are made. You could segregate your application into mutable and immutable 
+components along with some kind of transactional memory.
