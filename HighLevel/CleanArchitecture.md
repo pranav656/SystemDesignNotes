@@ -44,3 +44,8 @@ components along with some kind of transactional memory. Event sourcing is one s
 strategy where we store transactions instead of mutating variables.
 
 # Design Principles
+## Single Responsibility Principle
+
+Simple definition: A module must be responsible to one and only one actor.
+Symptoms of violations:
+* Accidental duplication: 
